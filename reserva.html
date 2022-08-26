@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 340 ~ 460px -->
+    <title>Document</title>
+
+<style>
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Cabeçalho */
+header {
+    background-color:red;
+    background-image: url(./imagens/mainheader.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#2e3532;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+}
+
+header h1 {
+    color:#af3800;
+}
+/* Navbar */
+nav {
+    background-color: #2E3532;
+}
+nav ul {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    height:3rem;
+}
+nav ul a {
+    text-decoration: none;
+    color:#AF3800
+}
+/* Section Projetos */
+.projetos {
+    display:flex;
+    justify-content: space-evenly;
+    height:20rem;
+}
+.projetos-img {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #af3800bb;
+    width: 100%;
+    
+}
+
+.projetos-text {
+    width: 100%;
+    text-align: center;
+}
+.projetos-text h1 {
+    padding-bottom: 2.5rem;
+}
+.projetos-text p {
+    padding:0 4rem
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div>
+            <img style="height:200px" src="./imagens/foto_perfil.png">
+        </div>
+        <div>
+            <h1>Rafael Cabral</h1>
+            <p>Progamandor WEB</p>
+            <p>Rio de janeiro, Brasil,<br> Jacarepaguá</p>
+            <a href="#"><img src="./img/icons8-facebook-novo-128.png" alt="logo facebook - com link para rede social  da pessoa"
+            height="30"></a>
+            
+            <a href="#"><img src="./img/icons8-instagram-128.png" alt="logo instagram - com link para rede social da pessoa"
+            height="30"></a>
+            
+            <a href="#"><img src="./img/icons8-twitter-128.png" alt="logo instagram - com link para rede social da pessoa" height="30"></a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Projetos</a></li>
+        </nav>
+    </ul>
+
+    <section class="projetos">
+        <div class="projetos-text">
+            <h1>Projetos</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor id purus vitae ultrices. In a venenatis nulla, nec porttitor leo. Donec et eros a libero consequat feugiat. Pellentesque et diam urna. Donec pharetra, ex commodo vestibulum pharetra, nulla leo varius lacus, in finibus augue erat id justo. Integer quis maximus odio. Proin varius dapibus urna, lacinia vulputate nisi lacinia vel. Vestibulum blandit egestas tincidunt.</p>
+        </div>
+        <div class="projetos-img">
+            <img style="height:250px" src="./imagens/projeto.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h1>Empresas</h1>
+        <p>Senac Rio</p>
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
