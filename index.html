@@ -14,10 +14,11 @@
     padding:0;
     box-sizing:border-box;
 }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /* Cabeçalho */
 header {
-    background-color:red;
-    background-image: url(./imagens/mainheader.png);
     background-repeat:no-repeat;
     background-size:cover;
     color:#2e3532;
@@ -28,11 +29,11 @@ header {
 }
 
 header h1 {
-    color:#af3800;
+    color:#e5cbae;
 }
 /* Navbar */
 nav {
-    background-color: #2E3532;
+    background-color: hsl(169,75%,42%);
 }
 nav ul {
     display:flex;
@@ -43,7 +44,7 @@ nav ul {
 }
 nav ul a {
     text-decoration: none;
-    color:#AF3800
+    color:#e5cbae
 }
 /* Section Projetos */
 .projetos {
@@ -55,7 +56,7 @@ nav ul a {
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: #af3800bb;
+    background-color:#f5f6f7;
     width: 100%;
     
 }
@@ -70,18 +71,20 @@ nav ul a {
 .projetos-text p {
     padding:0 4rem
 }
+
 </style>
 
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Projetos</a></li>
+        </nav>
     <header>
         <div>
-            <img style="height:200px" src="./imagens/foto_perfil.png">
-        </div>
-        <div>
-            <h1>Rafael Cabral</h1>
-            <p>Progamandor WEB</p>
-            <p>Rio de janeiro, Brasil,<br> Jacarepaguá</p>
+            <span>Olá,<h1>Rafael Cabral</h1></span>
             <a href="#"><img src="./img/icons8-facebook-novo-128.png" alt="logo facebook - com link para rede social  da pessoa"
             height="30"></a>
             
@@ -90,14 +93,11 @@ nav ul a {
             
             <a href="#"><img src="./img/icons8-twitter-128.png" alt="logo instagram - com link para rede social da pessoa" height="30"></a>
         </div>
+        <div>
+            <img style="height:200px" src="./imagens/foto_perfil.png">
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Empresa</a></li>
-            <li><a href="#">Projetos</a></li>
-        </nav>
     </ul>
 
     <section class="projetos">
