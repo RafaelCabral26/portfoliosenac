@@ -20,18 +20,18 @@ body {
 
 /* Navbar */
 nav {
-    border-bottom:2px solid#b6babaaa;
-    border-left:2px solid #b6babaaa;
-    border-right:2px solid #b6babaaa;
-    margin:0 40px;
+    border-bottom:2px solid#b6baba55;
+    border-left:2px solid #b6baba55;
+    border-right:2px solid #b6baba55;
+    margin:20px 20px;
     
 }
 .iconeport {
-    position:absolute;
+    position:relative;
     width:100px;
     top:1rem;
     left:5rem;
-    
+    top:-80px;
 }
 nav ul {
     display:flex;
@@ -40,15 +40,61 @@ nav ul {
     list-style: none;
     height:3rem;
     padding:3rem 0;
-    text-decoration: none;
     
 }
 nav ul a {
     text-decoration: none;
     color:rgb(162, 159, 156);
-    margin:100px;
-    font-weight:500
+    margin:50px;
+    
 }
+/* Efeito botão navbar */
+nav a {
+
+text-decoration: none;
+background-image: linear-gradient(#8decff, #27a1f3);
+background-size: 0% 0.1em;
+background-position-y: 100%;
+background-position-x: 100%;
+background-repeat: no-repeat;
+transition: background-size 0.3s ease-out;
+padding-bottom:40px;
+}
+nav a:hover, nav a:focus, nav a:active {
+background-size: 100% 0.2em;
+background-position-x: 0%;
+color:#58bbff;
+}
+/* 
+a::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+}
+nav a::before {
+
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background:linear-gradient(120deg, #48c0f344, #44c3fa66);
+    transition: transform .3s ease;
+    z-index:-1;
+}
+nav a {
+    position:relative;
+}
+nav a:hover {
+    color:rgb(97, 97, 97);
+    font-weight: bold; 
+}
+*/
+
 /* Cabeçalho */
 header {
     text-align: center;
@@ -84,14 +130,14 @@ header {
 </head>
 <body>
     <nav>
-        <img class="iconeport" src="./img/iconeportfolio.svg">
         <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Início</a></li>
             <li><a href="#">Empresa</a></li>
             <li><a href="#">Projetos</a></li>
         </ul>
-
+        
     </nav>
+    <img class="iconeport" src="./img/iconeportfolio.svg">
     <header>
             <span class="textoheader">Olá, me chamo <span class="nome" >Rafael Cabral</span> e sou desenvolvedor web especializado em design
         e desenvolvimento de sites.</span>
