@@ -20,9 +20,9 @@ body {
 
 /* Navbar */
 nav {
-    border-bottom:2px solid#b6babaaa;
-    border-left:2px solid #b6babaaa;
-    border-right:2px solid #b6babaaa;
+    border-bottom:2px solid#b6baba55;
+    border-left:2px solid #b6baba55;
+    border-right:2px solid #b6baba55;
     margin:20px 20px;
     
 }
@@ -49,6 +49,23 @@ nav ul a {
     
 }
 /* Efeito botão navbar */
+nav a {
+
+text-decoration: none;
+background-image: linear-gradient(#8decff, #27a1f3);
+background-size: 0% 0.1em;
+background-position-y: 100%;
+background-position-x: 100%;
+background-repeat: no-repeat;
+transition: background-size 0.3s ease-out;
+padding-bottom:40px;
+}
+nav a:hover, nav a:focus, nav a:active {
+background-size: 100% 0.2em;
+background-position-x: 0%;
+color:#58bbff;
+}
+/* 
 a::before {
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -65,7 +82,7 @@ nav a::before {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background:linear-gradient(120deg, #48c0f381, #44c3fa84);
+    background:linear-gradient(120deg, #48c0f344, #44c3fa66);
     transition: transform .3s ease;
     z-index:-1;
 }
@@ -76,6 +93,8 @@ nav a:hover {
     color:rgb(97, 97, 97);
     font-weight: bold; 
 }
+*/
+
 /* Cabeçalho */
 header {
     text-align: center;
