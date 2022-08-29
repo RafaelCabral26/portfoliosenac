@@ -20,9 +20,9 @@ body {
 
 /* Navbar */
 nav {
-    border-bottom:2px solid #b6baba66;
-    border-left:2px solid #b6babaaa;
-    border-right:2px solid #b6babaaa;
+    border-bottom:2px solid#b6baba55;
+    border-left:2px solid #b6baba55;
+    border-right:2px solid #b6baba55;
     margin:20px 20px;
     
 }
@@ -49,39 +49,27 @@ nav ul a {
     
 }
 /* Efeito botão navbar */
-a::before {
-    transform: scaleX(0);
-    transform-origin: bottom right;
-}
-a:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    
-}
-nav a::before {
-
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    inset: 0 0 0 0;
-    background:linear-gradient(120deg, #48c0f333, #44c3fa55);
-    transition: transform .3s ease;
-    z-index:-1;
-}
 nav a {
-    position:relative;
+
+text-decoration: none;
+background-image: linear-gradient(#8decff, #27a1f3);
+background-size: 0% 0.1em;
+background-position-y: 100%;
+background-position-x: 100%;
+background-repeat: no-repeat;
+transition: background-size 0.3s ease-out;
+padding-bottom:40px;
 }
-nav a:hover {
-    color:rgb(97, 97, 97);
-    font-weight: bold; 
+nav a:hover, nav a:focus, nav a:active {
+background-size: 100% 0.2em;
+background-position-x: 0%;
+color:#58bbff;
 }
 /* Cabeçalho */
 header {
     text-align: center;
     color:#677481;
     font-size: 22px;
-    margin:3rem;
     padding-bottom: 2rem;
     border-bottom:2px solid #b6babaaa
 }
@@ -89,7 +77,8 @@ header {
 .projetos {
     display:flex;
     justify-content: space-evenly;
-    margin:auto;
+    margin:2rem 8rem;
+    height:600px
 }
 .projetos-img {
     display:flex;
@@ -97,12 +86,35 @@ header {
     align-items: center;
     background-color:#f5f6f7;
     width: 100%;
+    
+}
+.projetos-img img {
+    height: 250px;
+}
+.imgsocial::before {
+    transform: scaleX(0);
+    transform-origin: bottom;
+}
+.imgsocial:hover::before {
+    transform: scaleX(1);
+    transform-origin: top;
+    
+}
+.imgsocial::before {
+
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background:#677481dd;
+    transition: transform .3s ease;
+    
+}
+.imgsocial {
+    position:relative;
 }
 
-.projetos-text {
-    width: 100%;
-    text-align: center;
-}
 
 /* Empresas */
 
@@ -120,22 +132,22 @@ header {
     </nav>
     <img class="iconeport" src="./img/iconeportfolio.svg">
     <header>
-            <span class="textoheader">Olá, me chamo <span class="nome" >Rafael Cabral</span> e sou desenvolvedor web especializado em design
-        e desenvolvimento de sites.</span>
-
+            <span class="textheader">Olá, me chamo <span class="nome" >Rafael Cabral</span> e sou desenvolvedor
+             web<br> especializado em design e desenvolvimento de sites.</span>
+        
     </header>
 
     <section class="projetos">
 
-        <div class="projetos-text">
-
-            <h1>Projetos</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor id purus vitae ultrices. In a venenatis nulla, nec porttitor leo. Donec et eros a libero consequat feugiat. Pellentesque et diam urna. Donec pharetra, ex commodo vestibulum pharetra, nulla leo varius lacus, in finibus augue erat id justo. Integer quis maximus odio. Proin varius dapibus urna, lacinia vulputate nisi lacinia vel. Vestibulum blandit egestas tincidunt.</p>
+        <div class="projetos-img">
+            <a href="#" class="imgsocial">
+                <img src="./imagens/4751890.jpg">
+            </a>
         </div>
 
         <div class="projetos-img">
 
-            <img style="height:250px" src="./imagens/projeto.jpg">
+            <a href="#" class="imgsocial" ><img src="./imagens/projeto.jpg"></a>
 
         </div>
 
