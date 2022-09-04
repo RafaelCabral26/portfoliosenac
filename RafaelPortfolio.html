@@ -24,7 +24,7 @@ nav {
     border-left:2px solid #b6baba55;
     border-right:2px solid #b6baba55;
     margin:20px 20px;
-    
+   
 }
 .iconeport {
     position:relative;
@@ -91,32 +91,23 @@ header {
 .projetos-img img {
     height: 250px;
 }
-.imgsocial::before {
-    transform: scaleX(0);
-    transform-origin: bottom;
-}
-.imgsocial:hover::before {
-    transform: scaleX(1);
-    transform-origin: top;
-    
-}
-.imgsocial::before {
 
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    inset: 0 0 0 0;
-    background:#677481dd;
-    transition: transform .3s ease;
-    
-}
 .imgsocial {
     position:relative;
 }
+/* Botões e textos Projetos  */
 
-
-/* Empresas */
+.overlay {
+    position:absolute;
+    z-index:10;
+    left:10;
+    top:45rem;
+}
+.button-img01 {
+    padding:10px 20px;
+    border-radius: 5px;
+    
+}
 
 </style>
 
@@ -141,13 +132,18 @@ header {
 
         <div class="projetos-img">
             <a href="#" class="imgsocial">
-                <img src="./imagens/4751890.jpg">
+                <img src="./img/4751890.jpg">
             </a>
+            <div class="overlay">
+                <button type="button" class="button-img01">Visitar Projeto</button>
+            </div>
         </div>
 
         <div class="projetos-img">
 
-            <a href="#" class="imgsocial" ><img src="./imagens/projeto.jpg"></a>
+            <a href="#" class="imgsocial" >
+                <img src="./img/projeto.jpg">
+            </a>
 
         </div>
 
